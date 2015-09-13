@@ -1,0 +1,141 @@
+body {  background-color: #F4F3F1;
+        color: #451105;
+        width: 100%;
+}
+
+a:link {text-decoration: none; color: #451105;}
+a:visited {text-decoration: none; color: #451105;}
+a:hover {color: #BE4D08;}
+
+#name { font-family: georgia, serif;
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 0.25em;
+        line-height: 1.5em;
+        text-align: right;
+        display: inline-block;
+        float: left;
+        margin-top: 1.25em;
+        margin-left: 10%;
+}
+
+#coffee {   float: left;
+            display: inline-block;
+            margin-left: 2%;
+}
+
+#shortbio { font-family: georgia, serif;
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            line-height: 1.5em;
+            text-align: left;
+            display: inline-block;
+            float: left;
+            margin-top: 1.8em;
+            margin-left: 6%;
+}
+      
+#links {    font-family: georgia, serif;
+            font-size: 15px;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            line-height: 1.5em;
+            text-align: center;
+}
+
+#footer {   font-family: georgia, serif;
+            font-size: 15px;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            line-height: 1.5em;
+            clear: both;
+            text-align: center;
+}
+
+#contact {  font-family: georgia, serif;
+            font-size: 15px;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            line-height: 1.5em;
+            text-align: right;
+            margin-right: 0.5em;
+            margin-top: 0.2em;
+}
+
+#block {    background-color: #451105;
+            width: 20px;
+            height: 20px;
+}
+
+#resumetext {   font-family: georgia, serif;
+                font-size: 11px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                line-height: 1.5em;
+                text-align: left;
+                display: inline-block;
+                float: left;
+                margin-left: 4%;
+                margin-top: 7.4em;
+}
+
+#footerfollow { font-family: georgia, serif;
+                font-size: 15px;
+                font-weight: 300;
+                letter-spacing: 0.05em;
+                line-height: 1.5em;
+                clear: both;
+                text-align: left;
+                margin-top: 10em;
+}
+
+#next {    font-family: georgia, serif;
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            line-height: 1.5em;
+            text-align: center;
+            border: solid;
+            background-color: #F4F3F1;
+            color: #451105;
+            margin-bottom: 6em;
+    
+}
+
+#quotedisplay   {       border: 0;
+                        font-size: 120px;
+                        background-color: #F4F3F1;
+                        font-family: georgia, serif;
+                        text-align: center;
+                        font-weight: 300;
+                        letter-spacing: 0.05em;
+                        margin-top: 2em;
+                        width: 100%;
+}
+
+#hiddenlife,
+#hiddenlove,
+#hiddenwife,
+#hiddenlive     {   visibility: hidden;
+}
+
+#quote  {   font-family: georgia, serif;
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.5em;
+            text-align: center;
+            margin-left: 40em;
+}
+
+#youtube {  margin-left: 15px;
+            margin-right: 20px;
+            position: relative;
+            top: 1em;
+}
+
+#googledrive {  position: relative;
+                top: 0.3em
+    
+}
