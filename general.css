@@ -16,12 +16,13 @@ a:hover {color: #BE4D08;}
         display: inline-block;
         float: left;
         margin-top: 1.25em;
-        margin-left: 10%;
+        margin-left: 9%;
 }
 
 #coffee {   float: left;
             display: inline-block;
-            margin-left: 2%;
+            margin-left: 0.1%;
+            text-align: center;
 }
 
 #shortbio { font-family: georgia, serif;
@@ -33,7 +34,7 @@ a:hover {color: #BE4D08;}
             display: inline-block;
             float: left;
             margin-top: 1.8em;
-            margin-left: 6%;
+            margin-left: 4.2%;
 }
       
 #links {    font-family: georgia, serif;
@@ -53,7 +54,7 @@ a:hover {color: #BE4D08;}
             text-align: center;
 }
 
-#contact {  font-family: georgia, serif;
+#address {  font-family: georgia, serif;
             font-size: 15px;
             font-weight: 300;
             letter-spacing: 0.05em;
