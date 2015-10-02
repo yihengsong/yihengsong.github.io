@@ -1,0 +1,82 @@
+{% extends "_base.html" %}
+
+<head>
+<title> {{ title }} </title>
+</head>
+
+
+
+{% block content %}
+<div class="container">
+  <div class="jumbotron">
+
+	<div style="background-image: url(headlineImage.jpg); background-size: 100%; text-align: center; padding-top: 10%; padding-bottom: 8%";> {{ headlineLogo|safe }} </div>
+
+<br>
+
+<h4 style="text-align:center"><em> {{ chartTitle }} </em></h4>
+<div style="text-align:center"> {{ chart1|safe }} </div>
+<br>
+<div style="text-align:center"> {{ chart2|safe }} </div>	
+
+<br><br>
+
+<h4 style="text-align:center"><em> {{ tableTitle }} </em></h4>
+<div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th> {{ firstTableHead }} </th>
+                  <th> {{ secondTableHead}} </th>
+                  <th> {{ thirdTableHead }} </th>
+		  <th> {{ fourthTableHead }} </th>
+		</tr>
+              </thead>
+              <tbody>
+
+	{% for row in costLiving %}
+			<tr>
+			<td> {{ row.Institution }} </td> 
+			<td> {{ row.InStateStudentsLivingOnCampus }} </td>
+			<td> {{ row.OutOfStateStudentsLivingOnCampus }} </td>
+			<td> {{ row.GraduationRate }} </td>
+			</tr>
+			</tbody>
+	{% endfor %}
+	</table>
+</div>
+	<div> 2012-2013 </div>
+
+<br><br>
+
+<h4 style="text-align:center"><em> {{ typeTitle }} </em></h4>
+	<div style="font-family: Times; font-size: 1.45em; color: rgb(95, 60, 0); border-style: solid; border-color: rgba(100, 65, 4, 0.8); margin: 0 auto; width: 13em;"> 
+{{ undergraduates }} Undergraduates <br>
+{{ pellGrant }} Receive Pell Grants <br>
+{{ federalLoan }} Receive Federal Loans <br>
+{{ endowment }} 2013 Endowment <br>
+	</div>
+
+<br>
+
+<div style="font-size: 1.2em; line-height: 2em; font-family: Helvetica;">
+Federal Aid Discounts: {{ federalAid }} <br>
+Median Federal Debt: {{ federalDebtAll }} <br>
+Median Federal Debt for Pell Grants: {{ federalDebtPell }} <br> 
+<br>
+10 Year After School: <br>
+Monthly Debt {{ monthly }} <br>
+Median Income {{ income }} <br>
+Below 25k Yearly Income {{ yearly }} <br>
+</div>
+
+<br>
+
+<div> Learn more on the <a href="https://projects.propublica.org/colleges/schools/university-of-nebraska-lincoln">UNL page</a>. </div>
+
+</div>	
+</div>
+    
+
+{% endblock content %}
+
