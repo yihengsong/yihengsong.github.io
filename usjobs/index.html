@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Best Paying Jobs In The United States</title>
+
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" />
+  
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+  
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+
+   
+  <meta property="og:url" content="http://127.0.0.1:5000/" />
+  <meta property="og:title" content="The Best Paying Jobs In The United States" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  
+
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+
+  
+  
+  
+</head>
+<body class="page-index">
+
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./">The Best Paying Jobs In The United States</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Sections <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#top_x_div">Annual Income</a></li>
+            <li><a href="#piechart1">Employment Rate Among Top 10</a></li>
+            <li><a href="#piechart2">General Employment Rate</a></li>
+            <li><a href="#table_div">Table of Employment Count</a></li>
+            <li><a href="#wordtree_explicit">Interactive Word Tree</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+</nav>
+
+
+
+<div class="container">
+<div class="jumbotron">
+
+<div id="headlineImg"> <img src="jobsLogoWhite.png" style="width:50%"> </div>
+<br>
+
+<div id="introText">
+Career choices shape our lives. How much we earn is often the deciding factor to a satisfactory lifestyle. As of 2014, the average individual income was 47,230 USD. So what is United States’ best paying job? By comparing occupations on a broad level with statistics by the Bureau of Labour, the top 10 highest income profession were listed. The top paying job differs from the lowest by a whopping <span id="topVsBtm">175,780 USD<span id="topVsBtmCount"> Physicians and Surgeons - Fast Food and Counter Workers = $194,990 - $19,210 = 175,780 USD </span></span>, and of the 135,128,260 employed, only <span id="percentJob">1.96%<span id="percentCount"> Percentage: ( 2,646,840 / 135,128,260 ) * 100% = 1.96% </span></span> hold those jobs.
+
+</div>
+<br>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1.1", {
+            packages: ["bar"]
+        });
+        google.setOnLoadCallback(drawStuff);
+
+        function drawStuff() {
+            var data = new google.visualization.arrayToDataTable([
+                ['Occupation', 'Average Annual Income (USD)'],
+                ["Physicians and Surgeons", 194990],
+                ["Dentists", 170940],
+                ["Lawyers and Judicial Law Clerks", 131970],
+                ["Marketing and Sales Managers", 129900],
+                ["Astronomers and Physicists", 116380],
+                ["Aircraft Pilots and Flight Engineers", 115230],
+                ["Air Traffic Controllers and Airfield Operations Specialists", 102840],
+                ["Health Teachers, Postsecondary", 102260],
+                ["Engineering and Architecture Teachers, Postsecondary", 99120],
+                ["Electrical and Electronics Engineers", 97460],
+                ["Total", 47230]
+            ]);
+
+            var options = {
+                title: 'Top 10 Paid Jobs In The United States',
+                width: 900,
+                legend: {
+                    position: 'none'
+                },
+                chart: {
+                    title: 'Top 10 Paid Jobs In The United States',
+                    subtitle: 'May 2014'
+                },
+                bars: 'horizontal', // Required for Material Bar Charts.
+                axes: {
+                    x: {
+                        0: {
+                            side: 'top',
+                            label: 'Average Annual Income (USD)'
+                        } // Top x-axis.
+                    }
+                },
+                bar: {
+                    groupWidth: "50%"
+                }
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+            chart.draw(data, options);
+        };
+    </script>
+
+
+    <div id="top_x_div" style=" overflow: auto; resize: vertical; max-width: 100%; height:500px; padding: 2%; background-color: white;"></div>
+
+<br>
+
+
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+    <script type="text/javascript">
+        google.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Occupation', 'Employed'],
+                ["Physicians and Surgeons", 633480],
+                ["Dentists", 115390],
+                ["Lawyers and Judicial Law Clerks", 614970],
+                ["Marketing and Sales Managers", 543410],
+                ["Astronomers and Physicists", 18450],
+                ["Aircraft Pilots and Flight Engineers", 113920],
+                ["Air Traffic Controllers and Airfield Operations Specialists", 29920],
+                ["Health Teachers, Postsecondary", 224930],
+                ["Engineering and Architecture Teachers, Postsecondary", 43840],
+                ["Electrical and Electronics Engineers", 308530],
+
+            ]);
+
+            var options = {
+                title: 'Employment Rate Among Top 10 [2,646,840 Employed]'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+
+    <div id="piechart1" style="height: 500px;"></div>
+<br>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+    <script type="text/javascript">
+        google.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Occupation', 'Employed'],
+                ["Physicians and Surgeons", 633480],
+                ["Dentists", 115390],
+                ["Lawyers and Judicial Law Clerks", 614970],
+                ["Marketing and Sales Managers", 543410],
+                ["Astronomers and Physicists", 18450],
+                ["Aircraft Pilots and Flight Engineers", 113920],
+                ["Air Traffic Controllers and Airfield Operations Specialists", 29920],
+                ["Health Teachers, Postsecondary", 224930],
+                ["Engineering and Architecture Teachers, Postsecondary", 43840],
+                ["Electrical and Electronics Engineers", 308530],
+                ["The Rest", 132481420]
+
+            ]);
+
+            var options = {
+                title: 'Employement Rate In Comparison [135,128,260 Employed]'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+    <div id="piechart2" style="height: 500px;"></div>
+<br>
+
+    <script type="text/javascript">
+        google.load("visualization", "1.1", {
+            packages: ["table"]
+        });
+        google.setOnLoadCallback(drawTable);
+
+        function drawTable() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Occupation');
+            data.addColumn('number', 'Employed');
+            data.addRows([
+                ["Physicians and Surgeons", 633480],
+                ["Dentists", 115390],
+                ["Lawyers and Judicial Law Clerks", 614970],
+                ["Marketing and Sales Managers", 543410],
+                ["Astronomers and Physicists", 18450],
+                ["Aircraft Pilots and Flight Engineers", 113920],
+                ["Air Traffic Controllers and Airfield Operations Specialists", 29920],
+                ["Health Teachers, Postsecondary", 224930],
+                ["Engineering and Architecture Teachers, Postsecondary", 43840],
+                ["Electrical and Electronics Engineers", 308530],
+                ["The Rest", 132481420]
+            ]);
+
+            var table = new google.visualization.Table(document.getElementById('table_div'));
+
+            table.draw(data, {
+                showRowNumber: false,
+                width: '100%',
+                height: '100%',
+            });
+        }
+    </script>
+
+    <div id="table_div"></div>
+<p id="infoPay"> National Occupational Employment and Wage Estimates by <a href="http://www.bls.gov/oes/current/oes_nat.htm">Bureau of Labor</a>.</p>
+<p id="infoPay" style="font-size: 1.3em"> Interactive Layout </p>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1.1", {
+            packages: ["wordtree"]
+        });
+        google.setOnLoadCallback(drawSimpleNodeChart);
+
+        function drawSimpleNodeChart() {
+            var nodeListData = new google.visualization.DataTable();
+            nodeListData.addColumn('number', 'id');
+            nodeListData.addColumn('string', 'childLabel');
+            nodeListData.addColumn('number', 'parent');
+            nodeListData.addColumn('number', 'size');
+            nodeListData.addColumn('number', 'color');
+            nodeListData.addRow([0, 'Job', -1, 5, 0]);
+            nodeListData.addRow([1, 'Medical:', 0, 3, 0]);
+            nodeListData.addRow([2, 'Law:', 0, 1, 0]);
+            nodeListData.addRow([3, 'Business:', 0, 1, 0]);
+            nodeListData.addRow([4, 'Engineering and Physics:', 0, 3, 0]);
+            nodeListData.addRow([5, 'Aircraft:', 0, 2, 0]);
+
+            nodeListData.addRow([6, 'Physicians and Surgeons', 1, 1, 0]);
+            nodeListData.addRow([7, 'Dentists', 1, 1, 0]);
+            nodeListData.addRow([8, 'Health Teachers, Postsecondary', 1, 1, 0]);
+
+            nodeListData.addRow([11, 'Diagnose and treat injuries or illnesses.', 6, 1, 0]);
+            nodeListData.addRow([12, 'Diagnose and treat problems with a patient’s teeth, gums, and related parts of the mouth.', 7, 1, 0]);
+            nodeListData.addRow([13, 'Teach courses in health specialties, in fields such as dentistry, laboratory technology, medicine, pharmacy, public health, therapy, and veterinary medicine.', 8, 1, 0]);
+
+            nodeListData.addRow([14, 'Lawyers and Judicial Law Clerks', 2, 1, 0]);
+
+            nodeListData.addRow([15, 'Assist Advise and represent individuals, businesses, and government agencies on legal issues and disputes. | Assist judges.', 14, 1, 0]);
+
+            nodeListData.addRow([16, 'Doctoral or professional degree', 15, 1, 0]);
+
+            nodeListData.addRow([17, 'Marketing and Sales Managers', 3, 1, 0]);
+
+            nodeListData.addRow([18, 'Direct organizations’ sales teams, set sales goals, analyze data, and develop training programs for organizations’ sales representatives.', 17, 1, 0]);
+
+            nodeListData.addRow([19, 'Bachelor’s degree', 18, 1, 0]);
+
+            nodeListData.addRow([20, 'Astronomers and Physicists', 4, 1, 0]);
+            nodeListData.addRow([21, 'Engineering and Architecture Teachers, Postsecondary.', 4, 1, 0]);
+            nodeListData.addRow([22, 'Electrical and Electronics Engineers', 4, 1, 0]);
+
+            nodeListData.addRow([23, 'Study the ways in which various forms of matter and energy interact.', 20, 1, 0]);
+
+            nodeListData.addRow([24, 'Doctoral or professional degree', 23, 1, 0]);
+
+            nodeListData.addRow([25, 'Teach courses in architecture and architectural design. | Teach courses pertaining to the application of physical laws and principles of engineering.', 21, 1, 0]);
+
+            nodeListData.addRow([26, 'Undefined due to broadness and subjectiveness', 25, 1, 0]);
+
+            nodeListData.addRow([27, 'Aircraft Pilots and Flight Engineers', 5, 1, 0]);
+            nodeListData.addRow([28, 'Air Traffic Controllers and Airfield Operations Specialists', 5, 1, 0]);
+
+            nodeListData.addRow([29, 'Fly and navigate airplanes, helicopters, and other aircraft. | Working or teaching with aircrafts.', 27, 1, 0]);
+            nodeListData.addRow([30, 'Its Complicated | High school diploma or equivalent', 29, 1, 0]);
+
+            nodeListData.addRow([31, 'Controllers coordinate the movement of air traffic to ensure that aircraft stay safe distances apart. | Ensure the safe takeoff and landing.', 28, 1, 0]);
+            nodeListData.addRow([32, 'Associate’s degree | High school diploma or equivalent', 31, 1, 0]);
+
+            nodeListData.addRow([33, 'Design, develop, test, and supervise the manufacturing of electrical equipment', 22, 1, 0]);
+            nodeListData.addRow([34, 'Bachelor’s degree', 33, 1, 0]);
+
+            nodeListData.addRow([35, 'Doctoral or professional degree', 11, 1, 0]);
+            nodeListData.addRow([36, 'Doctoral or professional degree', 12, 1, 0]);
+            nodeListData.addRow([37, 'Undefined due to broadness and subjectiveness', 13, 1, 0]);
+
+            nodeListData.addRow([38, 'http://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm', 35, 1, 0]);
+            nodeListData.addRow([39, 'http://www.bls.gov/ooh/healthcare/dentists.htm', 36, 1, 0]);
+            nodeListData.addRow([40, 'http://www.bls.gov/oes/current/oes251071.htm', 37, 1, 0]);
+
+            nodeListData.addRow([41, 'http://www.bls.gov/ooh/legal/lawyers.htm | http://www.bls.gov/ooh/about/data-for-occupations-not-covered-in-detail.htm', 16, 1, 0]);
+
+            nodeListData.addRow([42, 'http://www.bls.gov/ooh/management/sales-managers.htm', 19, 1, 0]);
+
+            nodeListData.addRow([43, 'http://www.bls.gov/ooh/life-physical-and-social-science/physicists-and-astronomers.htm', 24, 1, 0]);
+
+            nodeListData.addRow([44, 'Undefined due to broadness and subjectiveness', 26, 1, 0]);
+            nodeListData.addRow([45, 'http://www.bls.gov/ooh/architecture-and-engineering/electrical-and-electronics-engineers.htm', 34, 1, 0]);
+            nodeListData.addRow([46, 'http://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm | http://www.bls.gov/ooh/about/data-for-occupations-not-covered-in-detail.htm', 30, 1, 0]);
+
+            nodeListData.addRow([47, 'http://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm | http://www.bls.gov/ooh/about/data-for-occupations-not-covered-in-detail.htm', 32, 1, 0]);
+
+
+            var options = {
+                colors: ['black', 'black', 'black'],
+                wordtree: {
+                    format: 'explicit',
+                    type: 'suffix'
+                }
+            };
+
+            var wordtree = new google.visualization.WordTree(document.getElementById('wordtree_explicit'));
+            wordtree.draw(nodeListData, options);
+        }
+    </script>
+
+    <div id="wordtree_explicit" style="max-width: 100%; height: 500px;"></div>
+
+<p id="infoPay" style="text-align: center"> Jobs &gt; Category Of Jobs &gt; Of the 449 broad occupations&#39; &gt; Description &gt; Entry Level &gt; Reference Link </p>
+
+<div id="introText"> The career that will land you the most pay involves either health, safety, physics, law or innovative marketing. </div>
+
+<p id="infoPay"> Note: <br> In comparison with 2012, the employment rate for the top 10 jobs (Except: Aircraft Pilots and Flight Engineers, Electrical and Electronics Engineers) dropped, but pay has increased (Except: Those working with Aircrafts). </p>
+
+<p id="infoPay"> Here&#39;s a link to look at salaries after graduating from a named college. <a href="https://collegescorecard.ed.gov/search/?sort=salary:desc">Scorecard</a></p>
+
+
+</div>
+</div>
+
+
+
+  
+
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>
