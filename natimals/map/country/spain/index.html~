@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Bull</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/mainstyle.css">
+    <link rel="shortcut icon" href="/static/images/eye.ico"/>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+    <script>
+$(document).ready(function(){
+var header = $('body');
+
+var backgrounds = new Array(
+    'url(/static/pic_folder/spain1.jpg)'
+  , 'url(/static/pic_folder/spain2.JPG)'
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 5000);
+
+header.css('background-image', backgrounds[0]);
+});
+    </script>
+
+<body>
+    <div id="homeIcon">
+        <a href="../../../../natimals">
+            <div id="brand"> Natimals </div>
+            <div id="name"> Yiheng Song </div>
+        </a>
+    </div>
+    <a href="../../../../natimals/map"> <img id="globe" border="0" alt="Globe" src="/static/images/globe.png"> </a>
+    <div id="infoBox">
+        <div id="natName">Bull</div>
+        <div id="sciName"> <em>Bos taurus</em> </div>
+        <div id="line"> <hr style="width: 70%"> </div>
+        <div id="description"> Bulls are deeply embedded in Spanish culture and traditions such as bullfighting and Running of the Bulls, symbolizing power and immortality. </div>
+        <div id="status"> IUCN Status: Vulnerable</div>
+        <div id="country">Spain</div>
+    </div>
+
+
+</body>
+</html>
+
