@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Italian Wolf</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/mainstyle.css">
+    <link rel="shortcut icon" href="/static/images/eye.ico"/>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+    <script>
+$(document).ready(function(){
+var header = $('body');
+
+var backgrounds = new Array(
+    'url(/static/pic_folder/italy1.jpg)'
+  , 'url(/static/pic_folder/italy2.jpeg)'
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 5000);
+
+header.css('background-image', backgrounds[0]);
+});
+    </script>
+
+<body>
+    <div id="homeIcon">
+        <a href="/">
+            <div id="brand"> Natimals </div>
+            <div id="name"> Yiheng Song </div>
+        </a>
+    </div>
+    <a href="/map"> <img id="globe" border="0" alt="Globe" src="/static/images/globe.png"> </a>
+    <div id="infoBox">
+        <div id="natName">Italian Wolf</div>
+        <div id="sciName"> <em>Canis lupus italicus</em> </div>
+        <div id="line"> <hr style="width: 70%"> </div>
+        <div id="description"> Romus and Remulus are the mythical founders of Italy, said to be raised by a she-wolf. Now, wolves are known as the protectors of Italy. </div>
+        <div id="status"> IUCN Status: Least Concern</div>
+        <div id="country">Italy</div>
+    </div>
+
+
+</body>
+</html>
+
