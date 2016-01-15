@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Giant Panda</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/mainstyle.css">
+    <link rel="shortcut icon" href="/static/images/eye.ico"/>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+    <script>
+$(document).ready(function(){
+var header = $('body');
+
+var backgrounds = new Array(
+    'url(/static/pic_folder/china1.JPG)'
+  , 'url(/static/pic_folder/china2.jpg)'
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 5000);
+
+header.css('background-image', backgrounds[0]);
+});
+    </script>
+
+<body>
+    <div id="homeIcon">
+        <a href="/">
+            <div id="brand"> Natimals </div>
+            <div id="name"> Yiheng Song </div>
+        </a>
+    </div>
+    <a href="/map"> <img id="globe" border="0" alt="Globe" src="/static/images/globe.png"> </a>
+    <div id="infoBox">
+        <div id="natName">Giant Panda</div>
+        <div id="sciName"> <em>Ailuropoda melanoleuca</em> </div>
+        <div id="line"> <hr style="width: 70%"> </div>
+        <div id="description"> To contrast the aggressive nature of the dragon ancient China associates with, the panda was chosen to project a softer image abroad. Periodically, China loans out its pandas in a cultural exchange known as Panda Diplomacy. </div>
+        <div id="status"> IUCN Status: Endangered</div>
+        <div id="country">China</div>
+    </div>
+
+
+</body>
+</html>
+
