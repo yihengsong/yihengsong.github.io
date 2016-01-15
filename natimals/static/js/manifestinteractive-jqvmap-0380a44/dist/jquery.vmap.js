@@ -309,34 +309,34 @@ WorldMap.maps = {};
       onRegionClick: function(element, code, region)
     {
         if (code === 'fr') {
-        window.location = '../country/france'
+        window.location = 'country/france'
         }
         else if (code === 'us') {
-        window.location = '../country/unitedstatesofamerica'
+        window.location = 'country/unitedstatesofamerica'
         }
         else if (code === 'cn') {
-        window.location = '../country/china'
+        window.location = 'country/china'
         }
         else if (code === 'es') {
-        window.location = '../country/spain'
+        window.location = 'country/spain'
         }
         else if (code === 'it') {
-        window.location = '../country/italy'
+        window.location = 'country/italy'
         }
         else if (code === 'tr') {
-        window.location = '../country/turkey'
+        window.location = 'country/turkey'
         }
         else if (code === 'de') {
-        window.location = '../country/germany'
+        window.location = 'country/germany'
         }
         else if (code === 'gb') {
-        window.location = '../country/unitedkingdom'
+        window.location = 'country/unitedkingdom'
         }
         else if (code === 'ru') {
-        window.location = '../country/russia'
+        window.location = 'country/russia'
         }
         else if (code === 'my') {
-        window.location = '../country/malaysia'
+        window.location = 'country/malaysia'
         }
         else {
         var message = 'You clicked "'
